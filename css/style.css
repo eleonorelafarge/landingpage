@@ -1,0 +1,200 @@
+/*
+selecteur{
+    proprieter: valeur;
+    proprieter: valeur;
+    proprieter: valeur;
+    proprieter: valeur;
+    proprieter: valeur;
+*/
+
+.bandereau{
+  display: flex;
+  flex-flow: row wrap;
+justify-content: space-between;
+background-color: black;
+}
+.div_logo{
+  width: 8%;
+}
+.logo{
+  width: 100%; height: 100%;
+  justify-self: flex-start;
+}
+.grand_titre{
+color: rgb(236, 246, 255);
+display: flex;
+justify-self: center;
+align-self: center;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #2cc0ca;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: larger;
+}
+
+
+
+
+body{
+  margin: 0%;
+}
+
+.fond{
+width: 100%;
+}
+
+.video{
+  display: flex;
+  flex-flow: row-reverse wrap;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2%;
+}
+
+.texte_noir{
+  color: #ffffff;
+}
+
+.montre_cuir_sylicone{
+  background-color: #2cc0ca;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.montre_cuir{
+  height: 30%;
+  width: 30%;
+  margin: 2%;
+}
+
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #000000;
+  }
+
+
+  :root {
+    --surface-color: rgb(44, 44, 44);
+    --curve: 40;
+  }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+   
+
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #ffffff;
+  }
+  
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #afe1f8;   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  } 
+  
+  
+  footer{
+  background-color: #2cc0ca;
+  }
+li{
+  color: #afe1fd;
+}
+
+.contacts{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media all and (min-width:400px) and (max-width:600px){  /*mettre min et max car marche pas*/
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .grand_titre{
+    font-size: smaller;
+  }
+.video
+  .contacts{
+    display: flex;
+    align-items: center;
+  }
+}
